@@ -22,6 +22,7 @@ void setup() {
   btnState=0; 
   bleMouse.begin();
   delay(5000);
+
 }
 
 void pressed() {
@@ -36,12 +37,11 @@ void pressed() {
 }
  
 void loop() {
-
   if (btnState==0) {
     interval++;
     M5.Lcd.fillRect(0, 60, interval / 200, 8, ORANGE);
   }
-   
+  
   if ( interval >= interval_max ) { 
   
     interval=0;
@@ -58,7 +58,7 @@ void loop() {
         M5.Lcd.setTextColor(CYAN, DARKCYAN);
         M5.Lcd.setCursor(2, 40);
         M5.Lcd.println("RUNNING.");
-
+        
         digitalWrite(M5_LED, LOW);
         bleMouse.move(1, 1);
         delay(10);
@@ -79,6 +79,6 @@ void loop() {
     
   }
    
-    delay(1);
-    
+   delay(1);
+   
 }
