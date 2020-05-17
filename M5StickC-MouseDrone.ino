@@ -17,6 +17,7 @@ void setup() {
   M5.Lcd.setTextSize(2);
 
   pinMode(M5_LED, OUTPUT);
+  digitalWrite(M5_LED, HIGH);
   pinMode(button, INPUT);
   attachInterrupt(button,pressed,FALLING);
   btnState=0; 
