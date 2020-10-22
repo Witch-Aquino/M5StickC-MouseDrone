@@ -9,7 +9,7 @@ by M5StickC with Bluetooth connection.
 - install ESP32 BLE Mouse library v0.2.0
   (Didn't work with the latest)
   
-https://github.com/T-vK/ESP32-BLE-Mouse/releases/download/v0.2.0/ESP32-BLE-Mouse.zip
+https://github.com/T-vK/ESP32-BLE-Mouse/
 
 - M5StickC
 
